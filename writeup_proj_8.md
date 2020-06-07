@@ -16,11 +16,18 @@ The target of this project is to implement and design the parameter of a PID con
 
 # The PID Controller
 
-The PID controller used in this project is described below.
+The PID controller used in this project is described in psudo code as below.
 
 ```c++
+p_error = cte;
+i_error += cte;
+d_error = cte - previous_cte; 
 steer_value = -1 * (Kp*p_error + Ki*i_error + Kd*d_error);
 ```
+
+Where the `cte` is the error from the car reference point to the path.
+
+---
 
 The actual implementation are done in the `PID` class (`code line #33 ~ #38 in PID.cpp`)
 
@@ -55,11 +62,13 @@ steer_value = pid.TotalError();
 ```
 
 
-
-
 # Parameters
 
+Each parameter covers differenct aspect about stabilizing the system. This section describe the characteristic of each parameter in this problem.
+
 ## P-gain (Kp)
+
+
 
 ## D-gain (Kd)
 
