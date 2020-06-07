@@ -68,12 +68,23 @@ Each parameter covers differenct aspect about stabilizing the system. This secti
 
 ## P-gain (Kp)
 
+The **P-gain** (propotional gain) determine the effect of the `p_error` to the final steering value. It determine the imeidiate response of the error correction.
+
+
+Less
+
+Too much
+
 
 
 ## D-gain (Kd)
 
+The **D-gain** (differentail gain) determine the effect of the `d_error` to the final steering value.  
+
+
 ## I-gain (Ki)
 
+The **I-gain** (integral gain) determine the effect of the `i_error` to the final steering value.  
 
 # Result
 
