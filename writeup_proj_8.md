@@ -70,7 +70,7 @@ Each parameter covers differenct aspect about stabilizing the system. This secti
 
 The **P-gain** (propotional gain) determine the effect of the `p_error` to the final steering value. It determine the imeidiate response of the error correction.
 
-Compare to the final tuened parameter, the following test demonstrate the variation on `Kp`.
+ The following test demonstrate variations on `Kp` from final tuened parameters.
 
 
 **a. Zero Kp**
@@ -96,7 +96,9 @@ Too much `Kp` also resulted in rough intermittent steering during turn. The solu
 
 ## D-gain (Kd)
 
-The **D-gain** (differentail gain) determine the effect of the `d_error` to the final steering value.  
+The **D-gain** (differentail gain) determine the effect of the `d_error` to the final steering value. 
+
+ The following test demonstrate variations on `Kd` from final tuened parameters.
 
 **a. Zero Kd**
 
@@ -109,17 +111,19 @@ Here's the [link to the video.](https://youtu.be/qeMfHjFftTE)
 **b. 5x the Kd**
 
 
-Here's the [link to the video.](https://youtu.be/1hBAHDtH6QY)
+Here's the [link to the video.](https://youtu.be/wV24Bibx8SE)
 
-[![video - final](http://img.youtube.com/vi/1hBAHDtH6QY/0.jpg)](https://youtu.be/1hBAHDtH6QY)
+[![video - final](http://img.youtube.com/vi/wV24Bibx8SE/0.jpg)](https://youtu.be/wV24Bibx8SE)
 
 
-
+From the above demonstrations, increase `Kd` can reduce the oscillation of ego vehivle; however, too much `Kd` can result in over sensitive to errors or _defects_ of the input path.
 
 
 ## I-gain (Ki)
 
 The **I-gain** (integral gain) determine the effect of the `i_error` to the final steering value.  
+
+ The following test demonstrate variations on `Ki` from final tuened parameters.
 
 **a. Zero Ki**
 
@@ -134,6 +138,10 @@ Here's the [link to the video.](https://youtu.be/x1ZoREgAHco)
 Here's the [link to the video.](https://youtu.be/36640Dd5fg0)
 
 [![video - final](http://img.youtube.com/vi/36640Dd5fg0/0.jpg)](https://youtu.be/36640Dd5fg0)
+
+I found `Ki` to be an important term in this problem and controller setup. Since there is no feedforward terms, the only way the system can steer constantly an angle at turn is by lefting non-zero `cte`. This generate a situation that the car always run off center line when turning, if we are only using PD control. The integral term in PID control helps memorizing the error at the begining of turnning and works as a bias term in steering angle. The bias term keeps the steering at a specific value that generate an exact curvature that fit the turn without deviating from center line.
+
+However, doubling the value of `Ki` results in oscillation, which is the similar under-damped situation as lacking `Kp`.
 
 
 ## Tunning
