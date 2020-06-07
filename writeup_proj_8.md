@@ -70,12 +70,29 @@ Each parameter covers differenct aspect about stabilizing the system. This secti
 
 The **P-gain** (propotional gain) determine the effect of the `p_error` to the final steering value. It determine the imeidiate response of the error correction.
 
-
-Less
-
-Too much
+Compare to the final tuened parameter, the following test demonstrate the variation on `Kp`.
 
 
+**a. Zero `Kp`**
+
+Here's the [link to the video.](https://youtu.be/UBVHEr5Cb4c)
+
+[![video - final](http://img.youtube.com/vi/UBVHEr5Cb4c/0.jpg)](https://youtu.be/UBVHEr5Cb4c)
+
+
+
+**b. Twice the `Kp`**
+
+
+Here's the [link to the video.](https://youtu.be/Zd_zaaDy7SE)
+
+[![video - final](http://img.youtube.com/vi/Zd_zaaDy7SE/0.jpg)](https://youtu.be/Zd_zaaDy7SE)
+
+
+
+Both situations resulted in oscillation; however, the reason is different. Since the `Kp` term can act as a `damper` relative to the `Ki` term in the overall closeloop system, lacking `Kp` term let the intergral dynamic being underdamped and resulted in oscillation. On the other hand, too much `Kp` let the overall system been underdamped again, since the `Kd` term, which acts as the damper of the `p_error` term, wan't tuned up as well.
+
+Too much `Kp` also resulted in rough intermittent steering during turn. The solution for this is utilizing the `Ki` term.
 
 ## D-gain (Kd)
 
