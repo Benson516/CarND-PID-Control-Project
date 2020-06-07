@@ -121,6 +121,23 @@ Here's the [link to the video.](https://youtu.be/1hBAHDtH6QY)
 
 The **I-gain** (integral gain) determine the effect of the `i_error` to the final steering value.  
 
+**a. Zero Ki**
+
+Here's the [link to the video.](https://youtu.be/x1ZoREgAHco)
+
+[![video - final](http://img.youtube.com/vi/x1ZoREgAHco/0.jpg)](https://youtu.be/x1ZoREgAHco)
+
+
+
+**b. Twice the Ki**
+
+Here's the [link to the video.](https://youtu.be/36640Dd5fg0)
+
+[![video - final](http://img.youtube.com/vi/36640Dd5fg0/0.jpg)](https://youtu.be/36640Dd5fg0)
+
+
+
+
 # Result
 
 The final parameters are chosen as follow.
