@@ -150,7 +150,7 @@ However, doubling the value of `Ki` results in oscillation, which is the similar
 The tunning process was done manually by hand, according to the above mentioned properties. The reasons for not using calculation or auto-tunning technologies like Twiddle are listed below
 - The control plant of this problem is nonlinear, and its parameters are unknown to me; therefore, it is hard to theoretically design the parameter.
 - The PID problem contains only 3 parameters to be found. It's a relatively small searching space, which is possible for manually searching.
-- The performance of the closed-loop system will plateau when the parameters are within certain region; therefore, there is not need to find the exact optimal solution.
+- The performance of the closed-loop system will plateau when the parameters are within certain region; therefore, it may be unnecessary to find an exact optimal solution unless critical application.
 
 
 
