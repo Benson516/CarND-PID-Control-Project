@@ -73,7 +73,7 @@ The **P-gain** (propotional gain) determine the effect of the `p_error` to the f
 Compare to the final tuened parameter, the following test demonstrate the variation on `Kp`.
 
 
-**a. Zero `Kp`**
+**a. Zero Kp**
 
 Here's the [link to the video.](https://youtu.be/UBVHEr5Cb4c)
 
@@ -81,7 +81,7 @@ Here's the [link to the video.](https://youtu.be/UBVHEr5Cb4c)
 
 
 
-**b. Twice the `Kp`**
+**b. Twice the Kp**
 
 
 Here's the [link to the video.](https://youtu.be/Zd_zaaDy7SE)
