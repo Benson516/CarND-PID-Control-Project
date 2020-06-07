@@ -98,6 +98,24 @@ Too much `Kp` also resulted in rough intermittent steering during turn. The solu
 
 The **D-gain** (differentail gain) determine the effect of the `d_error` to the final steering value.  
 
+**a. Zero Kd**
+
+Here's the [link to the video.](https://youtu.be/qeMfHjFftTE)
+
+[![video - final](http://img.youtube.com/vi/qeMfHjFftTE/0.jpg)](https://youtu.be/qeMfHjFftTE)
+
+
+
+**b. Twice the Kd**
+
+
+Here's the [link to the video.](https://youtu.be/1hBAHDtH6QY)
+
+[![video - final](http://img.youtube.com/vi/1hBAHDtH6QY/0.jpg)](https://youtu.be/1hBAHDtH6QY)
+
+
+
+
 
 ## I-gain (Ki)
 
@@ -113,8 +131,8 @@ The final parameters are chosen as follow.
 | Ki  | 0.0019|
 | Kd  | 1.2|
 
-Here's the [link to the final result video.](https://youtu.be/wIGluTLbiUY)
+Here's the [link to the final result video.](https://youtu.be/ywz0B7GqCwU)
 
-[![video - final](http://img.youtube.com/vi/wIGluTLbiUY/0.jpg)](https://youtu.be/wIGluTLbiUY)
+[![video - final](http://img.youtube.com/vi/ywz0B7GqCwU/0.jpg)](https://youtu.be/ywz0B7GqCwU)
 
 
