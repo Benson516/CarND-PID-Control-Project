@@ -106,7 +106,7 @@ Here's the [link to the video.](https://youtu.be/qeMfHjFftTE)
 
 
 
-**b. Twice the Kd**
+**b. 5x the Kd**
 
 
 Here's the [link to the video.](https://youtu.be/1hBAHDtH6QY)
@@ -135,6 +135,14 @@ Here's the [link to the video.](https://youtu.be/36640Dd5fg0)
 
 [![video - final](http://img.youtube.com/vi/36640Dd5fg0/0.jpg)](https://youtu.be/36640Dd5fg0)
 
+
+## Tunning
+
+
+The tunning process was done manually by hand, according to the above mentioned properties. The reasons for not using calculation or auto-tunning technologies like Twiddle are listed below
+- The control plant of this problem is nonlinear, and its parameters are unknown to me; therefore, it is hard to theoretically design the parameter.
+- The PID problem contains only 3 parameters to be found. It's a relatively small searching space, which is possible for manually searching.
+- The performance of the closed-loop system will plateau when the parameters are within certain region; therefore, there is not need to find the exact optimal solution.
 
 
 
